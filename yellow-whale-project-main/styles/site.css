@@ -1,0 +1,516 @@
+body {
+  font-family: Georgia, sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+h1 {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 2.5em;
+  color: white;
+}
+
+h4 {
+  color: #692121;
+}
+
+.home-top h2 {
+  text-align: center;
+  color: white;
+}
+
+/** Header styling start **/
+.home-top {
+  background-image: url("../images/background-img2.png");
+  /* source https://stock.adobe.com/search?k=white%20black%20and%20red%20background*/
+  padding-top: 2%;
+  padding-bottom: 1%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.org {
+  display: flex;
+  color: #B31B1B;
+  font-weight: bold;
+  justify-content: center;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+.org p {
+  font-size: 1.3em;
+}
+
+.org p {
+  padding-top: 12px;
+}
+
+/** Header styling end **/
+/** Navigation bar styling start **/
+nav {
+  padding-top: 0px;
+  background-color: #B31B1B;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  width: 94%;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  padding-left: 3%;
+  color: white;
+}
+
+nav ul li {
+  display: flex;
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-size: 17px;
+  color: white;
+}
+
+/** Navigation bar styling end **/
+.current-page {
+  font-weight: bold;
+}
+
+.source {
+  font-size: 10px;
+}
+
+.contact {
+  background-color: #B31B1B;
+  padding: 0.2px;
+  margin-top: 7px;
+  text-align: center;
+  color: white;
+}
+
+.red {
+  background-color: #B31B1B;
+  color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.white {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/** E-board styling start **/
+#e-board h3 {
+  border-top: 2mm solid #B31B1B;
+  width: 100px;
+}
+
+#e-board ul li {
+  line-height: 1.5em;
+  max-width: 300px;
+}
+
+#president, #treasurer {
+  margin-top: 3%;
+  display: flex;
+}
+
+#treasurer-imgs, #president-imgs {
+  margin-top: 25%;
+  margin-left: 2%;
+}
+
+.treasurer-img figure img, .president-img figure img {
+  border-color: black;
+  border: double black;
+}
+
+.dots {
+  margin-left: 40%;
+}
+
+.tres-dot:hover {
+  background-color: gray;
+}
+
+.pres-dot:hover {
+  background-color: gray;
+}
+
+.tres-dot, .pres-dot {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.unfilled-dot, .filled-dot {
+  background-color: white;
+  border-radius: 50%;
+  height: 13px;
+  width: 5px;
+  border: 1px solid;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.filled-dot {
+  background-color: black;
+}
+
+.arrow {
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.indicator:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+#back-button1, #forward-button1, #back-button2, #forward-button2 {
+  margin-left: 25%;
+  cursor: pointer;
+}
+
+/** E-board styling end **/
+@media (min-width: 750px) {
+  p {
+    font-size: 1em;
+  }
+
+  .org {
+    justify-content: flex-start;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    background-color: white;
+    flex-basis: 50%;
+  }
+
+  nav ul li {
+    padding: 0 3%;
+  }
+
+  nav ul li a {
+    color: #B31B1B;
+    ;
+  }
+
+  /** E-board styling start **/
+  #e-board-flex {
+    display: flex;
+  }
+
+  #president, #treasurer {
+    width: 50%;
+  }
+
+  #president {
+    border-right: 3px double #e2e0d9;
+  }
+
+  #treasurer {
+    margin-left: 3%;
+  }
+
+  #president ul li, #treasurer ul li {
+    max-width: 600px;
+  }
+
+  /** E-board styling end **/
+  h1, .home-top h2 {
+    color: #B31B1B;
+  }
+}
+
+@media (min-width: 600px) {
+  .test {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+div.caro-row img {
+  display: flex;
+  width: 100%;
+  max-height: 500px;
+}
+
+div.caro-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: auto;
+  padding: 0 3%;
+}
+
+div.caro-row button {
+  height: auto;
+  min-width: 50px;
+}
+
+#indicator-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.bord {
+  padding: 10px;
+  margin: 20px;
+  padding-right: 200px;
+}
+
+.nice {
+  border: 3px solid;
+  padding: 20px;
+  border-color: gold;
+  margin: 20px;
+}
+
+.nicee {
+  padding-left: 15px;
+}
+
+/* calendar styling below */
+.calendar {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.calendar h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.calendar button {
+  height: 50px;
+  width: 75px;
+  margin-top: 0px;
+}
+
+.month {
+  display: flex;
+  border: 1px solid black;
+  border-top: 2px solid black;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #B31B1B;
+  width: 100%;
+  height: 100px;
+}
+
+.days {
+  display: flex;
+  border: 1px solid black;
+  border-bottom: 1px;
+  justify-content: space-around;
+  padding-left: 0px;
+  align-items: center;
+  width: 100%;
+  background-color: #B31B1B;
+  color: white;
+}
+
+.all-days {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.all-days * {
+  color: white;
+  flex: 1 0 14%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  padding: 0 0 50px;
+  margin: 0px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #B31B1B;
+}
+
+.day2 {
+  background-color: #B31B1B;
+}
+
+.day4 {
+  background-color: rgba(179, 27, 27, 0.75);
+}
+
+.all-days .day2:hover, .day3:hover, .day4:hover {
+  background-color: #ec5454;
+}
+
+.today {
+  background-color: #8f8f8f;
+}
+
+.newline {
+  position: absolute;
+  margin-top: 25px;
+  padding: 0;
+  border: 0px;
+  background-color: transparent;
+  max-width: 130px;
+  text-align: center;
+  color: #dddada;
+}
+
+.drop {
+  background-color: #8f8f8f;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid black;
+  position: absolute;
+}
+
+.meet {
+  cursor: pointer;
+}
+
+/* calendar media queries */
+@media (min-width: 1150px) {
+  .zero {
+    top: 600px;
+  }
+
+  .one {
+    top: 700px;
+  }
+
+  .two {
+    top: 800px;
+  }
+
+  .three {
+    top: 900px;
+  }
+
+  .four {
+    top: 1000px;
+  }
+
+  .five {
+    top: 1100px;
+  }
+
+  .d1 {
+    left: 205px;
+  }
+
+  .d2 {
+    left: 345px;
+  }
+
+  .d3 {
+    left: 495px;
+  }
+
+  .d4 {
+    left: 635px;
+  }
+
+  .d5 {
+    left: 775px;
+  }
+
+  .d6 {
+    left: 920px;
+  }
+
+  .d7 {
+    left: 1065px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .drop {
+    top: 80%;
+  }
+
+  .calendar h1 {
+    font-size: 40px;
+  }
+
+  .all-days * {
+    flex: 1 0 13%;
+  }
+}
+
+/* end of calendar styling */
+.image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 550px) {
+  .image {
+    width: 100px;
+    margin-right: -54px;
+    margin-left: -20px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .imz {
+    width: 279px;
+  }
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 25%;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.fun {
+  text-align: center;
+  padding-top: 32px;
+}
+
+#past-events h1 {
+  color: #B31B1B;
+}
+
+#past-events button:hover {
+  cursor: pointer;
+}

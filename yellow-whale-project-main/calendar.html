@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cornell Ballroom Club</title>
+  <link href="styles/site.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="org">
+      <p>Cornell Ballroom Dance Club</p>
+      <figure>
+        <!-- Source: Cornell Ballroom Dance Club -->
+        <img class="club-logo" src="images/club-logo.png" alt="" />
+      </figure>
+    </div>
+
+    <!-- navigation bar start -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="e-board.html">E-board</a></li>
+        <li><a href="calendar.html"><span class="current-page">Club Calendar</span></a></li>
+        <li><a href="past-events.html">Past Events</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- page banner start -->
+  <div class="home-top">
+    <h1>Club Calendar</h1>
+    <h2> Learn about upcoming events & workshops here!</h2>
+  </div>
+
+  <div class="source">
+    <!-- https://stock.adobe.com/search?k=white%20black%20and%20red%20background -->
+    <p>Image source: <cite><a href="https://stock.adobe.com/search?k=white%20black%20and%20red%20background">Adobe Stock</a></cite></p>
+  </div>
+
+  <!-- calendar start -->
+  <div class="calendar">
+    <!-- Content provided by Cornell Ballroom Dance Club -->
+    <!-- month and year banner -->
+    <div class="month">
+      <button class="arrow" id="back-button" aria-label="previous slide">◄</button>
+      <h1 id="setMonths"></h1>
+      <button class="arrow" id="forward-button" aria-label="next slide">►</button>
+    </div>
+
+    <!-- days of the week -->
+    <div class="days">
+      <h2 class="day1">Sun</h2>
+      <h2 class="day1">Mon</h2>
+      <h2 class="day1">Tue</h2>
+      <h2 class="day1">Wed</h2>
+      <h2 class="day1">Thu</h2>
+      <h2 class="day1">Fri</h2>
+      <h2 class="day1">Sat</h2>
+    </div>
+
+    <!-- calendar contents -->
+    <div class="all-days" id="all-days"></div>
+
+    <!-- dropdown menus -->
+    <div id="dropdown"></div>
+
+  </div>
+
+  <!-- start of bottom information -->
+  <div class="contact">
+    <p>Contact us: @CornellBallroomClub on Facebook</p>
+  </div>
+
+  <div class="source">
+    <!-- Cornell Ballroom Dance Club -->
+    <p>Logo source: <cite>Cornell Ballroom Dance Club</cite></p>
+  </div>
+
+  <script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="scripts/calendar.js"></script>
+</body>
+
+</html>
